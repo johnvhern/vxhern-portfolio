@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* .navbar-brand {
+    flex-shrink: 0;
+} */
+
+/* .navbar-menu {
+    display: flex !important;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: none !important;
+    padding: 0 !important;
+} */
+
+/* .navbar-separator {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 0.5rem;
+} */
+
+#themeToggle, #themeToggleDesktop {
+    transition: all 0.3s ease-in-out;
+}
+
+#themeToggle:hover, #themeToggleDesktop:hover {
+    opacity: 0.8;
+}
+
+#themeToggle .icon, #themeToggleDesktop .icon {
+    transition: transform 0.4s ease-in-out;
+}
+
+#themeToggle.rotating .icon, #themeToggleDesktop.rotating .icon {
+    transform: rotate(360deg);
+}
+
+
+/* Mobile - smaller font size */
+@media screen and (max-width: 1023px) {
+    .hero-title {
+        font-size: 2.5rem; /* Adjust based on your preference */
+    }
+}
+
+/* Desktop - larger font size */
+@media screen and (min-width: 1024px) {
+    .hero-title {
+        font-size: 5rem;
+    }
+}
+
+
+/* Desktop styling */
+@media screen and (min-width: 1024px) {
+    .navbar-separator {
+        display: inline-flex;
+        align-items: center;
+        padding: 0 0.5rem;
+    }
+}
+
+#heroArrow {
+    animation: updown 1.5s ease infinite; /* 1.5s duration, smooth easing, infinite loop */
+}
+
+/* Keyframes for the up and down movement */
+@keyframes updown {
+  0% {
+    transform: translateY(0); /* Start position (original Y position) */
+  }
+  50% {
+    transform: translateY(-20px); /* Move 20px up (adjust as needed) */
+  }
+  100% {
+    transform: translateY(0); /* Return to start position */
+  }
+}
+
+/* About Me & Featured Works */
+
+.skills-btn {
+    font-size: 0.9rem;
+}
+
+/* Career Path */
+
+.timeline {
+    position: relative;
+    padding: 0 0 0 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.35rem;
+    top: 1.5rem;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #3273dc, #f14668);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -2.15rem;
+    top: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #3273dc;
+    box-shadow: 0 0 0 4px rgba(50, 115, 220, 0.2);
+}
+
+/* Footer */
+
+#footer-logo {
+    height: 30px;
+    width: auto;
+}

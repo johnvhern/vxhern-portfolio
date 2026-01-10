@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>vxhern</title>
+    <!-- Light mode favicon -->
+    <link
+      rel="icon"
+      href="favicon_light.ico"
+      type="image/x-icon"
+      media="(prefers-color-scheme: light)"
+    />
+
+    <!-- Dark mode favicon -->
+    <link
+      rel="icon"
+      href="favicon_dark.ico"
+      type="image/x-icon"
+      media="(prefers-color-scheme: dark)"
+    />
+  </head>
+  <body>
+    <!-- * Hero Section -->
+
+    <section class="hero is-fullheight">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <div class="container">
+          <nav
+            class="navbar pt-4"
+            role="navigation"
+            aria-label="main navigation"
+          >
+            <div class="navbar-brand">
+              <a href="#" class="navbar-item button is-link">
+                <img src="" alt="brand logo" id="brand-logo" />
+              </a>
+
+              <a
+                role="button"
+                class="navbar-burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navbarBasicExample"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-end">
+                <a
+                  href="https://www.linkedin.com/in/johnvhern"
+                  class="navbar-item has-text-weight-medium"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+
+                <a
+                  href="https://www.instagram.com/vxhern/"
+                  target="_blank"
+                  class="navbar-item has-text-weight-medium"
+                  >Instagram
+                </a>
+
+                <a
+                  href="https://github.com/johnvhern"
+                  target="_blank"
+                  class="navbar-item has-text-weight-medium"
+                  >GitHub
+                </a>
+
+                <a
+                  href="https://www.facebook.com/jhnvhrn/"
+                  target="_blank"
+                  class="navbar-item has-text-weight-medium"
+                  >Facebook
+                </a>
+              </div>
+
+              <div class="buttons ml-2">
+                <a href="#contact-section" class="button"
+                  ><strong>Contact</strong></a
+                >
+                <button
+                  type="button"
+                  class="button is-hidden-touch"
+                  id="themeToggleDesktop"
+                >
+                  <!-- * Icon will be inserted here by JS -->
+                </button>
+                <button
+                  type="button"
+                  class="button is-hidden-desktop"
+                  id="themeToggle"
+                >
+                  <!-- * Icon will be inserted here by JS -->
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- * Hero Body -->
+
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="">
+            <div class="block animate__animated animate__fadeInUp">
+              <p class="subtitle has-text-weight-semibold">Hi! I am</p>
+            </div>
+            <div class="block animate__animated animate__fadeInUp">
+              <h1 class="title hero-title">John Vhern</h1>
+            </div>
+            <div class="block animate__animated animate__fadeInUp">
+              <p class="has-text-weight-bold is-size-4">
+                Software Engineer / System Implementation
+              </p>
+            </div>
+            <div
+              class="block container is-max-tablet animate__animated animate__fadeInUp"
+            >
+              <p class="subtitle has-text-centered">
+                Passionate about building clean, scalable applications and
+                intuitive digital experiences. I specialize in turning ideas
+                into functional, user-friendly solutions with a focus on modern
+                development practices.
+              </p>
+            </div>
+            <br />
+            <div
+              class="block pb-6 is-flex is-gap-2 is-justify-content-center animate__animated animate__fadeInUp"
+            >
+              <a href="#featured-work-section">
+                <button class="button is-dark">View My Work</button>
+              </a>
+              <a href="#learn-more-section">
+                <button class="button">Learn More</button>
+              </a>
+            </div>
+            <div class="block">
+              <span class="icon">
+                <span
+                  ><i class="fa-solid fa-arrow-down" id="heroArrow"></i
+                ></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- * About Me -->
+
+    <div class="container">
+      <section class="section is-medium" id="learn-more-section">
+        <div class="columns is-8">
+          <div class="column">
+            <div class="block">
+              <h2 class="is-size-5 has-text-weight-semibold">ABOUT ME</h2>
+            </div>
+            <div class="block">
+              <p class="title is-size-3">
+                Passionate about creating impactful digital solutions
+              </p>
+            </div>
+            <div class="block">
+              <p class="subtitle">
+                A comprehensive toolkit honed through years of building
+                practical applications that solve real-world problems.
+              </p>
+            </div>
+            <div class="block">
+              <p class="subtitle">
+                With experience in software development across various sectors,
+                I specialize in building robust, user-focused applications using
+                C# and WinForms. My work spans queue management systems, voting
+                platforms, and system administration solutions. I believe in
+                writing maintainable code that delivers tangible value to end
+                users.
+              </p>
+            </div>
+            <div class="block">
+              <p class="subtitle">
+                Currently expanding my skillset beyond my core C# expertise to
+                explore new programming languages and frameworks that can help
+                me build even more impactful solutions. I'm passionate about
+                creating software that helps people in their everyday tasks.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="block">
+              <h2 class="is-size-5 has-text-weight-semibold">
+                SKILLS & TECHNOLOGIES
+              </h2>
+            </div>
+            <div class="block">
+              <p class="is-size-5 has-text-weight-medium pb-2">Frontend</p>
+              <div class="block buttons are-small">
+                <p class="button skills-btn">HTML</p>
+                <p class="button skills-btn">CSS</p>
+                <p class="button skills-btn">Tailwind CSS</p>
+                <p class="button skills-btn">Bulma CSS</p>
+                <p class="button skills-btn">Bootstrap</p>
+                <p class="button skills-btn">WinForms</p>
+              </div>
+            </div>
+            <div class="block">
+              <p class="is-size-5 has-text-weight-medium pb-2">Backend</p>
+              <div class="block buttons are-small">
+                <p class="button skills-btn">Java</p>
+                <p class="button skills-btn">C#</p>
+                <p class="button skills-btn">MSSQL</p>
+                <p class="button skills-btn">SQLite</p>
+              </div>
+            </div>
+            <div class="block">
+              <p class="is-size-5 has-text-weight-medium pb-2">Design & UX</p>
+              <div class="block buttons are-small">
+                <p class="button skills-btn">Adobe XD</p>
+                <p class="button skills-btn">Canva</p>
+                <p class="button skills-btn">Prototyping</p>
+                <p class="button skills-btn">Minimalism</p>
+              </div>
+            </div>
+            <div class="block">
+              <p class="is-size-5 has-text-weight-medium pb-2">
+                Mobile & Tools
+              </p>
+              <div class="block buttons are-small">
+                <p class="button skills-btn">Git</p>
+                <p class="button skills-btn">GitHub</p>
+                <p class="button skills-btn">Auth</p>
+                <p class="button skills-btn">Android Studio</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- * Featured Works -->
+    <div class="container" id="featured-work-section">
+      <section class="section">
+        <div class="block pb-6 has-text-centered">
+          <div class="block">
+            <p class="is-size-5 has-text-weight-semibold">FEATURED WORK</p>
+          </div>
+          <div class="block">
+            <p class="is-size-3 has-text-weight-bold">Selected Projects</p>
+          </div>
+        </div>
+        <!-- * RosalES -->
+        <div class="columns is-8 mb-6">
+          <div class="column">
+            <div class="box">
+              <figure class="image is-16by9">
+                <img src="./imgs/projects/rosales.png" alt="rosales" />
+              </figure>
+            </div>
+          </div>
+          <div class="column">
+            <div class="block">
+              <p class="has-text-weight-bold is-size-4 pb-2">
+                RosalES Profiling System
+              </p>
+              <span class="tag is-success">Completed</span>
+              <span class="tag is-primary">Private Repo</span>
+            </div>
+            <div class="block">
+              <p class="subtitle">
+                The RosalES Profiling System helps educators monitor student
+                development using standardized assessments, automating grouping
+                and identifying delays.
+              </p>
+            </div>
+            <div class="block">
+              <div class="buttons are-small">
+                <p class="button skills-btn">WinForms</p>
+                <p class="button skills-btn">C#</p>
+                <p class="button skills-btn">.NET Framework</p>
+                <p class="button skills-btn">MSSQL</p>
+                <p class="button skills-btn">IText7</p>
+                <p class="button skills-btn">BCrypt</p>
+              </div>
+              <div class="block">
+                <a
+                  href="https://github.com/johnvhern/RosalESProfilingSystem"
+                  target="_blank"
+                >
+                  <button class="button">
+                    <span class="icon-text">
+                      <span class="icon">
+                        <i class="fa-brands fa-github fa-lg"></i>
+                      </span>
+                      <span>View Project</span>
+                    </span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- * Attendo -->
+        <div class="columns is-8 mb-6 is-flex-direction-row-reverse">
+          <div class="column">
+            <div class="box">
+              <figure class="image is-16by9">
+                <img src="./imgs/projects/attendo.png" alt="attendo" />
+              </figure>
+            </div>
+          </div>
+          <div class="column">
+            <div class="block">
+              <p class="has-text-weight-bold is-size-4 pb-2">
+                GCT QR Attendance System
+              </p>
+              <span class="tag is-success">Completed</span>
+              <span class="tag is-primary">Private Repo</span>
+            </div>
+            <div class="block">
+              <p class="subtitle">
+                The GCT QR Attendance System is an offline desktop tool for
+                tracking attendance with QR codes and barcode scanners,
+                featuring session management, ID generation, reporting, and
+                secure MSSQL + bcrypt authentication.
+              </p>
+            </div>
+            <div class="block">
+              <div class="buttons are-small">
+                <p class="button skills-btn">WinForms</p>
+                <p class="button skills-btn">C#</p>
+                <p class="button skills-btn">.NET Framework</p>
+                <p class="button skills-btn">MSSQL</p>
+                <p class="button skills-btn">IText7</p>
+                <p class="button skills-btn">BCrypt</p>
+                <p class="button skills-btn">QRCoder</p>
+              </div>
+              <div class="block">
+                <a href="https://github.com/johnvhern/Attendo" target="_blank">
+                  <button class="button">
+                    <span class="icon-text">
+                      <span class="icon">
+                        <i class="fa-brands fa-github fa-lg"></i>
+                      </span>
+                      <span>View Project</span>
+                    </span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- * Pulse -->
+        <div class="columns is-8 mb-6">
+          <div class="column">
+            <div class="box">
+              <figure class="image is-16by9">
+                <img src="./imgs/projects/pulse.png" alt="pulse" />
+              </figure>
+            </div>
+          </div>
+          <div class="column">
+            <div class="block">
+              <p class="has-text-weight-bold is-size-4 pb-2">
+                Pulse - Patient Management System
+              </p>
+              <span class="tag is-success">Completed</span>
+              <span class="tag is-primary">Private Repo</span>
+            </div>
+            <div class="block">
+              <p class="subtitle">
+                Pulse is a desktop application designed to streamline clinic
+                operations by enabling secretaries to efficiently manage
+                doctors, patients, and appointments. The system provides a
+                user-friendly interface, robust data management, and tools to
+                ensure smooth day-to-day clinic workflows.
+              </p>
+            </div>
+            <div class="block">
+              <div class="buttons are-small">
+                <p class="button skills-btn">WinForms</p>
+                <p class="button skills-btn">C#</p>
+                <p class="button skills-btn">.NET Core</p>
+                <p class="button skills-btn">EF Core</p>
+                <p class="button skills-btn">SQLite</p>
+                <p class="button skills-btn">Git</p>
+              </div>
+              <div class="block">
+                <a href="https://github.com/johnvhern/Pulse" target="_blank">
+                  <button class="button">
+                    <span class="icon-text">
+                      <span class="icon">
+                        <i class="fa-brands fa-github fa-lg"></i>
+                      </span>
+                      <span>View Project</span>
+                    </span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- * Pollara -->
+        <div class="columns is-8 mb-6 is-flex-direction-row-reverse">
+          <div class="column">
+            <div class="box">
+              <figure class="image is-16by9">
+                <img src="./imgs/projects/pollara.png" alt="attendo" />
+              </figure>
+            </div>
+          </div>
+          <div class="column">
+            <div class="block">
+              <p class="has-text-weight-bold is-size-4 pb-2">
+                Pollara Voting System
+              </p>
+              <span class="tag is-info">In Progress</span>
+              <span class="tag is-primary">Private Repo</span>
+            </div>
+            <div class="block">
+              <p class="subtitle">
+                An event-based voting management system that supports multiple
+                concurrent elections, customizable ballot types, and real-time
+                results tabulation while maintaining voter anonymity and vote
+                security.
+              </p>
+            </div>
+            <div class="block">
+              <div class="buttons are-small">
+                <p class="button skills-btn">C#</p>
+                <p class="button skills-btn">ASP.NET Core</p>
+                <p class="button skills-btn">MSSQL</p>
+                <p class="button skills-btn">Bootstrap</p>
+                <p class="button skills-btn">Password Hashing</p>
+              </div>
+              <div class="block">
+                <a href="https://github.com/johnvhern/pollara" target="_blank">
+                  <button class="button">
+                    <span class="icon-text">
+                      <span class="icon">
+                        <i class="fa-brands fa-github fa-lg"></i>
+                      </span>
+                      <span>View Project</span>
+                    </span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- * CAREER PATH -->
+    <div class="container" id="career-path-section">
+      <section class="section">
+        <div class="block has-text-centered">
+          <div class="block">
+            <p class="is-size-5 has-text-weight-semibold">CAREER PATH</p>
+          </div>
+          <div class="block">
+            <p class="is-size-3 has-text-weight-bold">Work Experience</p>
+          </div>
+        </div>
+        <div class="is-flex is-justify-content-center">
+          <div class="container is-max-desktop">
+            <div class="timeline">
+              <!-- * Freelance Fullstack Software Developer -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="block experience">
+                  <div class="header-title">
+                    <p class="pb-2">2025 - Present</p>
+                    <p class="is-size-5 has-text-weight-semibold">
+                      Freelance Fullstack Software Developer
+                    </p>
+                    <div class="header-subtitle pt-2">
+                      <span class="icon-text">
+                        <span class="icon"
+                          ><i class="fa-regular fa-building"></i
+                        ></span>
+                        <span>Project Based</span>
+                      </span>
+                      <span class="icon-text">
+                        <span class="icon"
+                          ><i class="fa-solid fa-location-dot"></i
+                        ></span>
+                        <span>Aklan</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="block header-body pt-2">
+                    <p>
+                      Versatile Software Developer specialized in architecting
+                      full-stack desktop solutions and enterprise-grade
+                      Management Information Systems (MIS). Expert in leveraging
+                      C#, .NET, and MSSQL to transform complex manual workflows
+                      into high-performance digital ecosystems, with a proven
+                      track record of delivering secure, data-driven
+                      applications that prioritize operational efficiency and
+                      user experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- * IT Support Intern -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="block experience">
+                  <div class="header-title">
+                    <p class="pb-2">Jan - April 2025</p>
+                    <p class="is-size-5 has-text-weight-semibold">
+                      IT Support Intern
+                    </p>
+                    <div class="header-subtitle pt-2">
+                      <span class="icon-text">
+                        <span class="icon"
+                          ><i class="fa-regular fa-building"></i
+                        ></span>
+                        <span>Asia Pacific Medical Center - Aklan</span>
+                      </span>
+                      <span class="icon-text">
+                        <span class="icon"
+                          ><i class="fa-solid fa-location-dot"></i
+                        ></span>
+                        <span>Judge Martelino, Kalibo</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="block header-body pt-2">
+                    <p>
+                      Served as an IT Support Intern at Asia Pacific Medical
+                      Center – Aklan, providing technical assistance for network
+                      and desktop systems across hospital departments. Gained
+                      hands-on experience in network configuration, hardware
+                      maintenance, and troubleshooting, contributing to the
+                      reliability of hospital IT operations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- * Contact -->
+    <div class="container" id="contact-section">
+      <section class="section is-medium">
+        <div class="block has-text-centered">
+          <div class="block">
+            <p class="is-size-5 has-text-weight-semibold">GET IN TOUCH</p>
+          </div>
+          <div class="block">
+            <p class="is-size-3 has-text-weight-bold">Let's Work Together</p>
+          </div>
+          <div class="block container is-max-tablet">
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities to be part of your vision. Feel free to reach out!
+          </div>
+        </div>
+        <div class="is-flex is-justify-content-center">
+          <div class="columns">
+            <div class="column is-flex is-align-items-center">
+              <i class="fa-regular fa-envelope"></i>
+              <span class="pl-2">johnvhern.dc@gmail.com</span>
+            </div>
+            <div class="column is-flex is-align-items-center">
+              <i class="fa-solid fa-location-dot"></i>
+              <span class="pl-2">Poblacion Makato, Aklan</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="content container is-fluid">
+        <div class="columns is-align-items-center">
+          <div class="column">
+            <a href="#" class="navbar-item button is-link">
+              <img src="" alt="footer logo" id="footer-logo" />
+            </a>
+          </div>
+          <div class="column has-text-centered">
+            <p>
+              &copy; <span id="year"></span> John Vhern. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/site.js"></script>
+  </body>
+</html>
